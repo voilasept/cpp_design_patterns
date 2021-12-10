@@ -1,0 +1,23 @@
+# ninja log v5
+0	1049	1639158639527247626	CMakeFiles/decorator_functional.dir/main.cpp.o	f43e0b6e68bd027a
+1052	1154	1639158639640190773	decorator_functional	358de66e786b3ccb
+1	467	1639158669292440995	CMakeFiles/decorator_functional.dir/main.cpp.o	f43e0b6e68bd027a
+467	498	1639158669327741351	decorator_functional	358de66e786b3ccb
+1	1095	1639158814672086268	CMakeFiles/decorator_functional.dir/main.cpp.o	f43e0b6e68bd027a
+1095	1214	1639158814801508147	decorator_functional	358de66e786b3ccb
+2	529	1639158837446375848	CMakeFiles/decorator_functional.dir/main.cpp.o	f43e0b6e68bd027a
+529	613	1639158837535147695	decorator_functional	358de66e786b3ccb
+1	554	1639158909433538018	CMakeFiles/decorator_functional.dir/main.cpp.o	f43e0b6e68bd027a
+554	690	1639158909571145880	decorator_functional	358de66e786b3ccb
+1	500	1639158961940528274	CMakeFiles/decorator_functional.dir/main.cpp.o	f43e0b6e68bd027a
+500	601	1639158962046001825	decorator_functional	358de66e786b3ccb
+1	1209	1639159868122371069	CMakeFiles/decorator_functional.dir/main.cpp.o	f43e0b6e68bd027a
+1209	1314	1639159868240258868	decorator_functional	358de66e786b3ccb
+1	1069	1639160289661477547	CMakeFiles/decorator_functional.dir/main.cpp.o	f43e0b6e68bd027a
+1069	1213	1639160289809431369	decorator_functional	358de66e786b3ccb
+1	1123	1639160685024635488	CMakeFiles/decorator_functional.dir/main.cpp.o	f43e0b6e68bd027a
+1123	1239	1639160685148645370	decorator_functional	358de66e786b3ccb
+2	489	1639160701852976612	CMakeFiles/decorator_functional.dir/main.cpp.o	f43e0b6e68bd027a
+490	519	1639160701888105216	decorator_functional	358de66e786b3ccb
+2	1237	1639160768583369146	CMakeFiles/decorator_functional.dir/main.cpp.o	f43e0b6e68bd027a
+1237	1342	1639160768695597967	decorator_functional	358de66e786b3ccb
