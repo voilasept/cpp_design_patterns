@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/hanchen/CLionProjects/abstract_factory_drink/drinks.h
+memory
+-
+iostream
+-
+map
+-
+cassert
+-
+functional
+-
+
+/Users/hanchen/CLionProjects/abstract_factory_drink/main.cpp
+iostream
+-
+drinks.h
+/Users/hanchen/CLionProjects/abstract_factory_drink/drinks.h
+

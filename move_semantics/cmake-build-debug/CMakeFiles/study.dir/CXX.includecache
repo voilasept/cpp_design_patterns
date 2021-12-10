@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/hanchen/CLionProjects/move_semantics/holder.h
+cstdlib
+-
+algorithm
+-
+iostream
+-
+
+/Users/hanchen/CLionProjects/move_semantics/main.cpp
+move_semantics/holder.h
+-
+iostream
+-
+

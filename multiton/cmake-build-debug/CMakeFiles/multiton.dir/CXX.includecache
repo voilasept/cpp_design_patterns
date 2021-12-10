@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/hanchen/CLionProjects/multiton/main.cpp
+iostream
+-
+map
+-
+multiton.h
+/Users/hanchen/CLionProjects/multiton/multiton.h
+
+/Users/hanchen/CLionProjects/multiton/multiton.h
+memory
+-
+

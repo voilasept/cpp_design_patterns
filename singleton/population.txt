@@ -1,0 +1,6 @@
+Tokyo
+1200
+Beijing
+1500
+Chicago
+300

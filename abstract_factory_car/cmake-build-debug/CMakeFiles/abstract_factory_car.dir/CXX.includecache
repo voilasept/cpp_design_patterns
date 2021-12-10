@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/hanchen/CLionProjects/abstract_factory_car/car.h
+memory
+-
+string
+-
+iostream
+-
+
+/Users/hanchen/CLionProjects/abstract_factory_car/car_factory.h
+car.h
+/Users/hanchen/CLionProjects/abstract_factory_car/car.h
+memory
+-
+
+/Users/hanchen/CLionProjects/abstract_factory_car/main.cpp
+iostream
+-
+car.h
+/Users/hanchen/CLionProjects/abstract_factory_car/car.h
+car_factory.h
+/Users/hanchen/CLionProjects/abstract_factory_car/car_factory.h
+

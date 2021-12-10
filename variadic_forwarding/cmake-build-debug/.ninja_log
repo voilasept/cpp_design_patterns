@@ -1,0 +1,16 @@
+# ninja log v5
+0	900	1639005591724716940	CMakeFiles/variadic_forwarding.dir/main.cpp.o	b111aac40786218c
+902	955	1639005591790806331	variadic_forwarding	695c2408b57de624
+1	1160	1639005663511047195	CMakeFiles/variadic_forwarding.dir/main.cpp.o	b111aac40786218c
+1161	1252	1639005663606167111	variadic_forwarding	695c2408b57de624
+2	560	1639005756665458204	CMakeFiles/variadic_forwarding.dir/main.cpp.o	b111aac40786218c
+561	657	1639005756766856487	variadic_forwarding	695c2408b57de624
+1	1011	1639005882613663392	CMakeFiles/variadic_forwarding.dir/main.cpp.o	b111aac40786218c
+1011	1114	1639005882723137068	variadic_forwarding	695c2408b57de624
+1	510	1639005932311035646	CMakeFiles/variadic_forwarding.dir/main.cpp.o	b111aac40786218c
+2	1207	1639006063540149224	CMakeFiles/variadic_forwarding.dir/main.cpp.o	b111aac40786218c
+1208	1300	1639006063638479075	variadic_forwarding	695c2408b57de624
+2	513	1639006077562104779	CMakeFiles/variadic_forwarding.dir/main.cpp.o	b111aac40786218c
+514	552	1639006077603928718	variadic_forwarding	695c2408b57de624
+2	1430	1639006176091721473	CMakeFiles/variadic_forwarding.dir/main.cpp.o	b111aac40786218c
+1430	1540	1639006176209124713	variadic_forwarding	695c2408b57de624
