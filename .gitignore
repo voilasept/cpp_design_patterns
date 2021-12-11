@@ -1,3 +1,6 @@
 *.out
+*.o
 *.xml
 *.log
+*.json
+*.ninja
