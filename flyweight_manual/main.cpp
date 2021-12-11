@@ -6,6 +6,7 @@ using namespace std;
 typedef uint16_t KEY;
 typedef boost::bimap<KEY, string> BMAP;
 
+// can move key and name_map inside Name as static members
 class NameStore{
 private:
     NameStore() = default;
