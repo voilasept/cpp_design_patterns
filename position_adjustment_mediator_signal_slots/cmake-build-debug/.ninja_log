@@ -1,0 +1,11 @@
+# ninja log v5
+1	2848	1639518453342823536	CMakeFiles/position_adjustment_mediator_signal_slots.dir/main.cpp.o	e4112618d5238881
+2	2973	1639518453469295908	CMakeFiles/position_adjustment_mediator_signal_slots.dir/strategy.cpp.o	b46ff69eeffcb903
+2	3294	1639518453787646736	CMakeFiles/position_adjustment_mediator_signal_slots.dir/postion_mediator.cpp.o	fac75b1bfdccc72
+3295	3418	1639518453929043088	position_adjustment_mediator_signal_slots	89cb6afbf79c6bfd
+5	2784	1639518639534922881	CMakeFiles/position_adjustment_mediator_signal_slots.dir/main.cpp.o	e4112618d5238881
+7	2923	1639518639672860929	CMakeFiles/position_adjustment_mediator_signal_slots.dir/strategy.cpp.o	b46ff69eeffcb903
+7	3210	1639518639960427556	CMakeFiles/position_adjustment_mediator_signal_slots.dir/postion_mediator.cpp.o	fac75b1bfdccc72
+3210	3327	1639518640095936386	position_adjustment_mediator_signal_slots	89cb6afbf79c6bfd
+6	3148	1639518709846657790	CMakeFiles/position_adjustment_mediator_signal_slots.dir/main.cpp.o	e4112618d5238881
+3148	3277	1639518709994792356	position_adjustment_mediator_signal_slots	89cb6afbf79c6bfd
