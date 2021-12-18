@@ -23,7 +23,16 @@ m.def("add", &add, "A function which adds two numbers");
  *
  * $$ c++ -O3 -Wall -shared -std=c++11 -fPIC $(python3 -m pybind11 --includes) hello_world.cpp -o hello_world.so -undefined dynamic_lookup
  *
+ * NOTE (12/17/2021)
+ * Because I updated gcc, use the updated compiler instead:
+ * /Library/Developer/CommandLineTools/usr/bin/c++ -O3 -Wall -shared -std=c++11 -fPIC $(python3 -m pybind11 --includes) hello_world.cpp -o hello_world.so -undefined dynamic_lookup
+ *
  * NOTE:
  * To make Pycharm recognize hello_world.so:
  * python interpreter => [setting]show all => click on "tree" button => add dir path to .so
+ *
+ * NOTE (12/17/2021)
+ * export PYTHONPATH=$PYTHONPATH:/usr/local/cpplib/pybind11/
+ * to fix the error:
+ * /Users/hanchen/CLionProjects/pybind_test/venv/bin/python3: No module named pybind11
  */
