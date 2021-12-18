@@ -3,6 +3,8 @@
 #include <algorithm>
 using namespace std;
 
+#define ITERATOR
+
 class BankAccount{
 public:
     BankAccount(int overdraft_limit)
@@ -36,6 +38,12 @@ public:
 //protected:  // state recording is important in command pattern!
     bool succeed;
     bool called;
+    friend ostream &operator<<(ostream &os, const Command &command) {
+        os << "balance: " << command.bk.balance
+           << " succeed: " << command.succeed
+           << " called: " << command.called << "\n";
+        return os;
+    }
 };
 
 class SingleCommand : public Command{
@@ -110,6 +118,37 @@ public:
         }
         return succeed;
     }
+
+#ifdef ITERATOR
+    class MultiCommandIterator{
+    public:
+        MultiCommand* multi_commands;
+        size_t index;
+        MultiCommandIterator(MultiCommand* multi_commands, size_t index)
+            :multi_commands(multi_commands), index(index) {}
+        bool operator==(MultiCommandIterator& other) const {
+            return multi_commands==other.multi_commands
+                   and index == other.index;
+        }
+        bool operator!=(MultiCommandIterator& other) const {
+            return multi_commands==other.multi_commands
+                   and index != other.index;
+        }
+        MultiCommandIterator& operator++(){
+            index++;
+            return *this;
+        }
+        Command& operator*() const {
+            return *(multi_commands->commands[index]);
+        }
+    };
+    MultiCommandIterator begin(){
+        return {this, 0};
+    }
+    MultiCommandIterator end(){
+        return {this, commands.size()};
+    }
+#endif
 };
 
 
@@ -127,5 +166,11 @@ int main() {
     commands.undo();
     bk.query();
 
+#ifdef ITERATOR
+    cout << "Test iterator:" << endl;
+    for(Command& cmd : commands){
+        cout << cmd;
+    }
+#endif
     return 0;
 }
