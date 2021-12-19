@@ -1,4 +1,4 @@
-# Install script for directory: /Users/hanchen/CLionProjects/mediator_chatroom
+# Install script for directory: /Users/hanchen/CLionProjects/multi_thread_signal_slots
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/hanchen/CLionProjects/mediator_chatroom/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/hanchen/CLionProjects/multi_thread_signal_slots/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

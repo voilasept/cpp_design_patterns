@@ -1,19 +1,5 @@
 # ninja log v5
-0	1413	1639500744734843200	CMakeFiles/mediator_chatroom.dir/main.cpp.o	13b45aa451172bc2
-2	1415	1639500744738409512	CMakeFiles/mediator_chatroom.dir/person.cpp.o	536293c69a610070
-1	516	1639500769476059494	CMakeFiles/mediator_chatroom.dir/main.cpp.o	13b45aa451172bc2
-2	532	1639500769493316669	CMakeFiles/mediator_chatroom.dir/person.cpp.o	536293c69a610070
-2	552	1639500812188289695	CMakeFiles/mediator_chatroom.dir/chatroom.cpp.o	f4956a7a7b109925
-552	662	1639500812303687752	mediator_chatroom	3ef2fe3dff40d6c4
-2	1122	1639501017767225685	CMakeFiles/mediator_chatroom.dir/main.cpp.o	13b45aa451172bc2
-3	1126	1639501017772245015	CMakeFiles/mediator_chatroom.dir/person.cpp.o	536293c69a610070
-3	1130	1639501017781021225	CMakeFiles/mediator_chatroom.dir/chatroom.cpp.o	f4956a7a7b109925
-1130	1274	1639501017939467548	mediator_chatroom	3ef2fe3dff40d6c4
-1	609	1639501043943711155	CMakeFiles/mediator_chatroom.dir/person.cpp.o	536293c69a610070
-609	677	1639501044021550615	mediator_chatroom	3ef2fe3dff40d6c4
-1	579	1639501066980782221	CMakeFiles/mediator_chatroom.dir/main.cpp.o	13b45aa451172bc2
-579	613	1639501067019809726	mediator_chatroom	3ef2fe3dff40d6c4
-1	605	1639501099705538427	CMakeFiles/mediator_chatroom.dir/main.cpp.o	13b45aa451172bc2
-605	696	1639501099800023307	mediator_chatroom	3ef2fe3dff40d6c4
 1	1480	1639501157403805520	CMakeFiles/mediator_chatroom.dir/main.cpp.o	13b45aa451172bc2
+1	609	1639501043943711155	CMakeFiles/mediator_chatroom.dir/person.cpp.o	536293c69a610070
+3	1130	1639501017781021225	CMakeFiles/mediator_chatroom.dir/chatroom.cpp.o	f4956a7a7b109925
 1481	1575	1639501157506547093	mediator_chatroom	3ef2fe3dff40d6c4
