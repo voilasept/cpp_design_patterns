@@ -19,5 +19,11 @@ int main() {
     for(auto& msg : msgs) {
         cout << "updated: " << mult_final.notify(msg) << " ";
     }
+    cout << endl;
+    price.unsubscribe(mult_final);
+    for(auto& msg : msgs) {
+        cout << "updated: " << mult_final.notify(msg) << " ";
+    }
+
     return 0;
 }
