@@ -6,12 +6,24 @@ using namespace std;
  */
 template<typename T>
 class Property{
-public:
+private:
     T value;
-    Property(T&& value):value(value){}
-    Property(const Property& other){value = other.value;}
-    Property& operator=(const Property& other){value = other.value; return *this;}
+    T old_value;
+public:
+    Property(T&& value):value(value), old_value(value){}
+    Property(const Property& other){
+        value = other.value;
+        old_value = other.old_value;
+    }
+    Property& operator=(const Property& other){
+        old_value = value;
+        value = other.value;
+        return *this;
+    }
     operator T(){return value;}
+    T last() const {
+        return old_value;
+    }
 };
 
 class Person{
@@ -28,7 +40,7 @@ int main() {
     Person q {p};
     cout << q.height << " " << q.weight << endl;
     q.height = 20;
-    cout << q.height << endl;
+    cout << q.height << " " << q.height.last() << endl;
     Property<int> z {130};
     cout << z << endl;
     return 0;
