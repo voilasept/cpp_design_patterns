@@ -20,6 +20,15 @@ void risky_increment(int& value){
     value++;
 }
 
+/*
+ * The scoped_lock is a strictly superior version of lock_guard
+ * that locks an arbitrary number of mutexes all at once
+ * (using the same deadlock-avoidance algorithm as std::lock).
+ * In C++>=17, you should only ever use scoped_lock.
+ * e.g. std::scoped_lock<std::mutex, std::mutex> lock(mtx1, mtx2);
+ */
+typedef scoped_lock<recursive_mutex> ScopedLock;
+
 class Counter{
 private:
     // can't use std::mutex otherwise increment_twice->increment becomes deadlock
@@ -29,11 +38,11 @@ public:
     Counter():value(0), mtx(){}
     void increment(){
         // lock_guard is like smart ptr, get destroyed out-of-scope and release mtx
-        lock_guard<recursive_mutex> guard(mtx);
+        ScopedLock guard(mtx);
         risky_increment(value);
     }
     void increment_twice(){
-        lock_guard<recursive_mutex> guard(mtx);
+        ScopedLock guard(mtx);
         increment();
         increment();
     }
