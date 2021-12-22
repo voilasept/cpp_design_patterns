@@ -5,6 +5,7 @@
 #include <string>
 #include <algorithm>
 #include <cassert>
+#include <mutex>
 using namespace std;
 
 struct MSG{
@@ -15,19 +16,25 @@ struct MSG{
             :sequence(sequence), price(price), size(size){}
 };
 
+// optional thread safety
+typedef scoped_lock<recursive_mutex> ScopedLock;
 
 class Node{
-public:
+protected:
     vector<Node*> observers;
     vector<Node*> deps;
+    recursive_mutex mtx;
+public:
     double value;
     long int last_sequence = -1;
     void subscribe(Node& observer) {
+        ScopedLock lock {mtx};
         assert(find(observers.begin(), observers.end(), &observer) == observers.end());
         observers.push_back(&observer);
         observer.deps.push_back(this);
     }
     void unsubscribe(Node& observer) {
+        ScopedLock lock {mtx};
         observers.erase(
                 remove(observers.begin(), observers.end(), &observer),
                 observers.end()
@@ -38,6 +45,7 @@ public:
         );
     }
     void prepare_deps(MSG& msg){
+        ScopedLock lock {mtx};
         if (last_sequence != msg.sequence) {
             for (auto &dep: deps) {
                 dep->notify(msg);
