@@ -1,0 +1,11 @@
+# ninja log v5
+1	599	1640531674532805059	CMakeFiles/double_dispatch.dir/expression.cpp.o	578c72c71cd70308
+0	646	1640531674581048494	CMakeFiles/double_dispatch.dir/main.cpp.o	8b35d5644c44ea5c
+2	513	1640531687924129724	CMakeFiles/double_dispatch.dir/expression.cpp.o	578c72c71cd70308
+2	553	1640531687964644608	CMakeFiles/double_dispatch.dir/main.cpp.o	8b35d5644c44ea5c
+2	928	1640531988452717410	CMakeFiles/double_dispatch.dir/visitor.cpp.o	fa20bac0ed99ea1c
+928	1072	1640531988614429624	double_dispatch	71839cb3d5dd5b3e
+4	982	1640532296496076466	CMakeFiles/double_dispatch.dir/expression.cpp.o	578c72c71cd70308
+4	999	1640532296524380885	CMakeFiles/double_dispatch.dir/visitor.cpp.o	fa20bac0ed99ea1c
+2	1023	1640532296546496756	CMakeFiles/double_dispatch.dir/main.cpp.o	8b35d5644c44ea5c
+1023	1119	1640532296657176411	double_dispatch	71839cb3d5dd5b3e
