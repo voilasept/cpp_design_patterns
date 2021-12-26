@@ -6,6 +6,7 @@
 #include <algorithm>
 #include <cassert>
 #include <mutex>
+#include <boost/functional/hash.hpp>
 using namespace std;
 
 struct MSG{
@@ -24,14 +25,17 @@ protected:
     vector<Node*> observers;
     vector<Node*> deps;
     recursive_mutex mtx;
+    size_t seed;
 public:
     double value;
     long int last_sequence = -1;
+    Node() {seed = 0x11111111; value = 0;}
     void subscribe(Node& observer) {
         ScopedLock lock {mtx};
         assert(find(observers.begin(), observers.end(), &observer) == observers.end());
         observers.push_back(&observer);
         observer.deps.push_back(this);
+        boost::hash_combine(observer.seed, seed);
     }
     void unsubscribe(Node& observer) {
         ScopedLock lock {mtx};
@@ -54,6 +58,9 @@ public:
         }
     }
     virtual double notify(MSG& msg) = 0;
+    [[nodiscard]] size_t get_seed() const {
+        return seed;
+    }
 };
 
 
@@ -63,6 +70,9 @@ public:
         value = msg.size;
         return value;
     }
+    MsgSize(){
+        boost::hash_combine(seed, "MsgSize");
+    }
 };
 
 class MsgPrice : public Node{
@@ -70,6 +80,9 @@ public:
     double notify(MSG& msg) override{
         value = msg.price;
         return value;
+    }
+    MsgPrice(){
+        boost::hash_combine(seed, "MsgPrice");
     }
 };
 
@@ -83,6 +96,9 @@ public:
         }
         return value;
     }
+    SumNodes(){
+        boost::hash_combine(seed, "SumNodes");
+    }
 };
 
 class MultNodes : public Node{
@@ -94,6 +110,9 @@ public:
             value *= dep->value;
         }
         return value;
+    }
+    MultNodes(){
+        boost::hash_combine(seed, "MultNodes");
     }
 };
 
